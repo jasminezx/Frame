@@ -1,0 +1,78 @@
+// Prefix
+@css-prefix: mc-;
+// Color
+@primary-color: #3399ff;
+@info-color: #3399ff;
+@success-color: #00cc66;
+@warning-color: #ff9900;
+@error-color: #ff6600;
+// a链接
+@link-color: #2D8cF0;
+//tint() 它将颜色与白色混合，同时减少颜色的比例。
+@link-hover-color: tint(@link-color, 20%);
+// shade() 它将颜色与黑色混合，因为您减少了颜色的比例。
+@link-active-color: shade(@link-color, 5%);
+
+// Base
+@body-background: #fff;
+@font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+@code-family: Consolas, Menlo, Courier, monospace;
+
+@title-color: #464c5b;
+@text-color: #657180;
+
+
+@font-size-large: 16px;
+@font-size-base: 14px;
+@font-size-small: 12px;
+@line-height-base: 1.5;
+// 它将数字向下取整为下一个最小整数
+@border-radius-base: 5px;
+@border-radius-small: 3px;
+
+// Border color
+@border-color-base: #dddee1; // outside
+@border-color-lighter: #ebeef5; // lighter
+@border-color-split: #e9eaec; // inside
+// Background color
+// Shadow
+@shadow-color: rgba(0, 0, 0, 0.2);
+@shadow-base: @shadow-down;
+@shadow-up: 0 -1px 6px @shadow-color;
+@shadow-down: 0 1px 6px @shadow-color;
+@shadow-left: -1px 0 6px @shadow-color;
+@shadow-right: 1px 0 6px @shadow-color;
+
+// Input
+@input-height-base: 32px;
+@input-height-large: 36px;
+@input-height-small: 24px;
+
+@input-placeholder-color: #f3f3f3;
+@input-color: @text-color;
+@input-border-color: @border-color-base;
+@input-bg: #fff;
+
+@input-hover-border-color: @primary-color;
+@input-focus-border-color: @primary-color;
+@input-disabled-bg: #f3f3f3;
+
+
+// Z-index
+// page-content(页面内容) < 10
+@zindex-back-top: 70;
+// 固定
+@zindex-affix: 70;
+// 模态框  80-90
+@zindex-modal: 80;
+// 消息 98
+@zindex-message: 98;
+// 加载 98
+@zindex-spin: 98;
+// 下拉框
+@zindex-select: 99;
+
+// Animation
+@animation-time: 0.3s;
+@transition-time: 0.2s;
+

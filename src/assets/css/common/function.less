@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/**
+ * @name          function
+ * @description   function   style
+ * @author        wuwg
+ * @createTime    2019-08-25
+ * @UpdateTime    2019-08-55
+ */
+
+/**
+* 状态名字
+* hover
+* visited
+* waring
+* default
+* current
+* selected
+* disabled
+* focus
+* blur
+* checked
+* success
+* error
+* active
+* disabled
+*/
+@function-prefix:mc-;
+
+.disabled {
+    cursor: default !important;
+    opacity: 0.6;
+    pointer-events: none;
+    text-decoration: none !important;
+}
+
+.disabled:hover {
+    text-decoration: none !important;
+}
+
+/***********************************************************
+
+                    type   float  clear
+
+***********************************************************/
+.@{function-prefix} {
+    &fl {
+        float: left;
+    }
+
+    &fr {
+        float: right;
+    }
+
+    /***********************************************************
+
+                        type   block  change
+
+    ***********************************************************/
+
+    &inline {
+        display: inline;
+    }
+
+    &block {
+        display: block;
+    }
+
+    &inline-block {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+    }
+
+    /***********************************************************
+
+                        type   visivible
+
+    ***********************************************************/
+
+    &hide {
+        display: none;
+    }
+
+    &show {
+        display: block;
+    }
+
+    &hidden {
+        visibility: hidden;
+    }
+
+    &visible {
+        visibility: visible;
+    }
+
+    &opacity0 {
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+
+    &opacity1 {
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+
+    /***********************************************************
+
+                        type   overflow
+
+    ***********************************************************/
+
+    &ovh {
+        overflow: hidden;
+    }
+
+    &ovhy {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    &ovhx {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    /***********************************************************
+
+                                type:	position
+
+    ************************************************************/
+
+    &posr {
+        position: relative;
+    }
+
+    &posa {
+        position: absolute;
+    }
+
+    &posf {
+        position: fixed;
+    }
+
+    /***********************************************************
+
+                                type:	font
+
+    ************************************************************/
+    &fwn {
+        font-weight: normal;
+    }
+
+    &fwb {
+        font-weight: bold;
+    }
+
+    /***********************************************************
+
+                        type   text
+
+    ***********************************************************/
+
+    /*文本缩进2em*/
+    &ti2 {
+        text-indent: 2em;
+    }
+
+    &text-hide {
+        text-indent: -9999em;
+        font: 0/0 SimSun;
+    }
+
+    /*文本隐藏*/
+    &text-ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    /*文本出现...*/
+    &wwb {
+        white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+
+    /*文本自动换行*/
+    &wsn {
+        word-wrap: normal;
+        white-space: nowrap;
+    }
+
+    /*文本不换行*/
+    &usn {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    /***********************************************************
+
+                        type   align
+
+    ***********************************************************/
+    &tal {
+        text-align: left;
+    }
+
+    &tac {
+        text-align: center;
+    }
+
+    &tar {
+        text-align: right;
+    }
+
+    &vam {
+        vertical-align: middle;
+    }
+
+    &vat {
+        vertical-align: top;
+    }
+
+    &vab {
+        vertical-align: bottom;
+    }
+
+    &taj {
+        text-align: justify;
+        text-justify: inter-ideograph;
+    }
+
+    /*css3 仅ie支持*/
+
+    /***********************************************************
+
+                        type   cursor
+
+    ***********************************************************/
+    &curd {
+        cursor: default;
+    }
+
+    &curp {
+        cursor: pointer;
+    }
+
+    &curm {
+        cursor: move;
+    }
+
+    &curh {
+        cursor: help;
+    }
+
+    /***********************************************************
+
+                       type   border
+
+   ***********************************************************/
+    &border-default {
+        border: 1px solid #dddee1;
+    }
+}

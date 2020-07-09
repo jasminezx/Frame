@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: auto;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+//对normalize.less中的修改
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/*在 IE11 下，浏览器自作多情在 text input 组件上加一个 close 叉叉，：*/
+input::-ms-clear,
+/*** IE10+下文本框输入文字后又叉叉，密码框后有小眼睛图标，去除password类型输入框的眼睛需要使用伪元素***/
+input::-ms-reveal {
+    display: none;
+}
+
+/* Chrome,FireFox H5的input number样式去掉箭头样式 */
+
+/**webkit**/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+/**Gecko**/
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+a {
+    color: @link-color;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: color @transition-time ease;
+
+    &:hover {
+        color: @link-hover-color;
+    }
+
+    &:active {
+        color: @link-active-color;
+    }
+
+    &:active,
+    &:hover {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    &[disabled] {
+        color: #ccc;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: @code-family;
+}
+
+// 滚动条样式
+
+/* 整个滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+ 
+/* 滚动条有滑块的轨道部分 */
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    border-radius: 5px;
+}
+ 
+/* 滚动条滑块(竖向:vertical 横向:horizontal) */
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color:rgb(139, 139, 139);
+    border-radius: 5px;
+}
+ 
+/* 滚动条滑块hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #071544;
+}
+ 
+/* 同时有垂直和水平滚动条时交汇的部分 */
+::-webkit-scrollbar-corner {
+    display: block;    /* 修复交汇时出现的白块 */
+}
