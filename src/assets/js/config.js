@@ -1,7 +1,7 @@
 /*
  * @Author: zhangxue
  * @Date: 2020-07-09 09:49:24
- * @LastEditTime: 2020-07-09 16:09:51
+ * @LastEditTime: 2020-07-10 17:12:45
  * @Description: 全局配置文件
  * @FilePath: \model\src\assets\js\config.js
  */
@@ -37,7 +37,7 @@ const localUrl = {
   // 首页模块的数据
   index: {
     // 标注来源分布情况
-    bzlyfbqk: '/static/json/index/bzlyfbqk.json',
+    getUser: '/static/json/userInfo.json',
     // 领导监管情况
     ldjgqk: '/static/json/index/ldjgqk.json',
   },

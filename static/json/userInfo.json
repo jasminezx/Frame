@@ -1,0 +1,15 @@
+{
+    "data":[{
+        "name":"艾晓雪",
+        "sex":"女",
+        "age":24,
+        "base":"四川成都"
+    },{
+        "name":"丁晓宁",
+        "sex":"男",
+        "age":26,
+        "base":"广东深圳"
+    }],
+    "totalPage":2,
+    "totalResult":8
+}

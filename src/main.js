@@ -25,6 +25,7 @@ Vue.prototype.$axios = Axios;
 Vue.prototype.$loadingText = '数据加载中，请稍候...';
 Vue.prototype.$emptyTableText = '没有搜到任何数据'
 Vue.prototype.$logoutCount = 0;
+let axiosPromiseArr = [];
 
 Axios.defaults.withCredentials = true;
 
