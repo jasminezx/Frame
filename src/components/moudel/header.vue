@@ -1,7 +1,7 @@
 <!--
  * @Author: zhangxue
  * @Date: 2020-07-09 16:35:01
- * @LastEditTime: 2020-07-09 17:11:49
+ * @LastEditTime: 2020-07-10 09:36:57
  * @Description: 头部组件
  * @FilePath: \packge\src\components\moudel\header.vue
 --> 
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'header',
+  name: 'mc-header',
   data () {
     return {
       menuList: [{
